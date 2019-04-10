@@ -13,6 +13,7 @@ header h1 {
     margin: 0;
     font-size: 1.5em;
     font-weight: normal;
+    margin-right: 20px;
 }
 
 header .centerer {
@@ -21,11 +22,7 @@ header .centerer {
     align-items: center;
 }
 
-header nav {
-    margin: 5px 0;
-}
-
-header nav a {
+header a {
     color: #333;
     text-decoration: none;
     margin: 0 10px;
@@ -38,8 +35,10 @@ header nav a {
 }
 
 .main {
-    padding: 0 10px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .main h2 {
@@ -86,12 +85,17 @@ header nav a {
 }
 
 .login-field {
-    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 300px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.flex-spacer {
+    flex: 1;
 }
 
 .login-field .form-label {
@@ -107,5 +111,12 @@ header nav a {
     padding: 5px 10px;
     outline: none;
     width: 100%;
+    box-sizing: border-box;
     color: #3a474e;
+}
+
+.form-section {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
 }

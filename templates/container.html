@@ -12,11 +12,12 @@
         <header>
             <div class="centerer">
                 {% block title %}{% endblock title %}
-                <nav>
-                    <a href="{{ url_for('dispHome') }}">Home</a>
-                    <a href="{{ url_for('dispIntro') }}">Intro</a>
-                    <a href="{{ url_for('dispArticles') }}">Articles</a>
-                </nav>
+                <a href="{{ url_for('dispHome') }}">Home</a>
+                <a href="{{ url_for('dispIntro') }}">Intro</a>
+                <a href="{{ url_for('dispArticles') }}">Articles</a>
+                <div class="flex-spacer"></div>
+                <a href="{{ url_for('dispRegister') }}">Register</a>
+                <a href="{{ url_for('dispLogin') }}">Login</a>
             </div>
         </header>
         <div class="main">

@@ -31,12 +31,12 @@ def dispIntro():
 def dispArticles():
 	return render_template('articles.html', articles=articles, title="Articles")
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def dispRegister():
 	form = RegistrationForm()
 	return render_template('register.html', title='Register', form=form)
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def dispLogin():
 	form = LoginForm()
 	return render_template('login.html', title='Login', form=form)
