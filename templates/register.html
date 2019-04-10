@@ -1,0 +1,34 @@
+{% extends "container.html" %}
+{% block title %}
+    <h1>Register</h1>
+{% endblock title %}
+{% block content %}
+    <div class="form-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <h2>Register for MySite</h2>
+            <div class="login-field">
+                {{ form.username.label(class="form-label") }}
+                {{ form.username(class="form-input") }}
+            </div>
+            <div class="login-field">
+                {{ form.email.label(class="form-label") }}
+                {{ form.email(class="form-input") }}
+            </div>
+            <div class="login-field">
+                {{ form.password.label(class="form-label") }}
+                {{ form.password(class="form-input") }}
+            </div>
+            <div class="login-field">
+                {{ form.confirm_password.label(class="form-label") }}
+                {{ form.confirm_password(class="form-input") }}
+            </div>
+            <div class="login-field">
+                {{ form.submit(class="button button-hero") }}
+            </div>
+        </form>
+    </div>
+    <div class="login-field">
+        <a class="button button-secondary" href="{{ url_for('dispLogin') }}">Go to Login</a>
+    </div>
+{% endblock content %}

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: arial;
+    background-color: #f6f6f6;
+}
+
+header {
+    background-color: #bdcfda;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+header .centerer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    margin: 5px 0;
+}
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.centerer, .main {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+.main {
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.main h2 {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+}
+
+.main .article, .form-section {
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+    margin: 10px;
+    padding: 10px;
+}
+
+.button {
+    font-size: 15px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #5a6e7a;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 3px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4a5e6a;
+    box-shadow: 0. 1px 3px rgba(0,0,0,0.3);
+}
+
+.button-secondary {
+    background-color: #FFFFFF;
+    border: 1px solid #CCC;
+    color: #000;
+    text-decoration: none;
+    text-transform: none;
+}
+.button-secondary:hover {
+    background-color: #EEE;
+}
+
+.login-field {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 300px;
+}
+
+.login-field .form-label {
+    font-size: 13px;
+    color: #3a474e;
+}
+
+.login-field .form-input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #CCC;
+    font-size: 15px;
+    padding: 5px 10px;
+    outline: none;
+    width: 100%;
+    color: #3a474e;
+}

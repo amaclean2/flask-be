@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+            <title>My New Site - {{ title }}</title>
+        {% else %}
+            <title>My New Site</title>
+        {% endif %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    </head>
+    <body>
+        <header>
+            <div class="centerer">
+                {% block title %}{% endblock title %}
+                <nav>
+                    <a href="{{ url_for('dispHome') }}">Home</a>
+                    <a href="{{ url_for('dispIntro') }}">Intro</a>
+                    <a href="{{ url_for('dispArticles') }}">Articles</a>
+                </nav>
+            </div>
+        </header>
+        <div class="main">
+            {% block content %}{% endblock content %}
+        </div>
+    </body>
+</html>

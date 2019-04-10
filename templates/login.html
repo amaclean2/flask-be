@@ -1,0 +1,26 @@
+{% extends "container.html" %}
+{% block title %}
+    <h1>Login</h1>
+{% endblock title %}
+{% block content %}
+    <div class="form-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <h2>Login to MySite</h2>
+            <div class="login-field">
+                {{ form.email.label(class="form-label") }}
+                {{ form.email(class="form-input") }}
+            </div>
+            <div class="login-field">
+                {{ form.password.label(class="form-label") }}
+                {{ form.password(class="form-input") }}
+            </div>
+            <div class="login-field">
+                {{ form.submit(class="button button-hero") }}
+            </div>
+        </form>
+    </div>
+    <div class="login-field">
+        <a class="button button-secondary" href="{{ url_for('dispRegister') }}">Register for an account</a>
+    </div>
+{% endblock content %}
